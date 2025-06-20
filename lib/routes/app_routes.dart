@@ -1,9 +1,10 @@
 abstract class AppRoutes {
   static const SPLASH = '/splash';
-  static const MarquePage = '/marquepage';
+  static const MarquePage = '/bookmark';
   static const HOME = '/home';
   static const Rejoindre = '/rejondre';
   static const Soutenir = '/soutenir';
+  static const Profile = '/profile';
   static const lumenVideos = '/nosvideos';
   static const PostDetails = '/details';
   static const YoutubeViews = '/yt_details';
