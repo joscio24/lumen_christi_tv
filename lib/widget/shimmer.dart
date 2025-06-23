@@ -8,7 +8,7 @@ class ShimmerCard extends StatelessWidget {
       baseColor: Colors.grey[300]!,
       highlightColor: Colors.grey[100]!,
       child: Container(
-        width: 120, // ✅ Takes full width to avoid layout issues
+        width: 145, // ✅ Takes full width to avoid layout issues
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(

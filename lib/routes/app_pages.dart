@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:lumen_christi_tv/modules/LiveStream/views/livestreampage.dart';
 import 'package:lumen_christi_tv/modules/MarquePage/bindings/marquepage_binding.dart';
 import 'package:lumen_christi_tv/modules/MarquePage/views/marque_page.dart';
 import 'package:lumen_christi_tv/modules/Nousrejoindre/views/nous_rejoindre.dart';
@@ -6,8 +7,8 @@ import 'package:lumen_christi_tv/modules/Nousrejoindre/views/profile_view.dart';
 import 'package:lumen_christi_tv/routes/app_routes.dart';
 import 'package:lumen_christi_tv/splash/bindings/splash_binding.dart';
 import 'package:lumen_christi_tv/splash/view/splash_view.dart';
+import 'package:lumen_christi_tv/views/detail_view.dart';
 import 'package:lumen_christi_tv/views/home_view.dart';
-
 
 class AppPages {
   static final pages = [
@@ -18,11 +19,8 @@ class AppPages {
       transition: Transition.cupertino, // Smooth fade-in transition
       transitionDuration: Duration(milliseconds: 800),
     ),
-    
-    GetPage(
-      name: AppRoutes.HOME,
-      page: () => HomeView(),
-    ),
+
+    GetPage(name: AppRoutes.HOME, page: () => HomeView()),
 
     GetPage(
       name: AppRoutes.MarquePage,
@@ -36,6 +34,20 @@ class AppPages {
       name: AppRoutes.Profile,
       page: () => ProfilePage(),
       // binding: MarquepageBinding(),
+      transition: Transition.cupertino, // Smooth fade-in transition
+      transitionDuration: Duration(milliseconds: 800),
+    ),
+
+    GetPage(
+      name: AppRoutes.LiveStream,
+      page: () => LiveStreamPage(),
+      transition: Transition.cupertino, // Smooth fade-in transition
+      transitionDuration: Duration(milliseconds: 800),
+    ),
+
+    GetPage(
+      name: AppRoutes.PostDetails,
+      page: () => DetailView(),
       transition: Transition.cupertino, // Smooth fade-in transition
       transitionDuration: Duration(milliseconds: 800),
     ),
